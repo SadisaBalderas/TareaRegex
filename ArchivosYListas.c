@@ -1,21 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-
-typedef struct nodo
-{
-    char *nombre;
-    struct nodo *sig;
-    struct nodo *ant;
-} TNodo;
-
-typedef struct
-{
-    TNodo *inicio;
-    TNodo *fin;
-} TListaD;
-
+#include "ArchivosYListas.h"
 TNodo *CrearNodo(char *nombre)
 {
     TNodo *ptr = (TNodo *)malloc(sizeof(TNodo));
